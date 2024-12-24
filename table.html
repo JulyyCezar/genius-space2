@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Test table</title>
+  </head>
+  <body>
+    <!-- В аудіо та відео обов'язково додаєм controls та вставляєм через source -->
+    <audio controls>
+      <source src="#" />
+    </audio>
+    <video controls>
+      <!-- Не всі браузери підтримують mp4, тому ми можем додати друге відео, розділивши їх атрибутом type -->
+      <!-- Якщо браузер не підтримує webm, він загрузить альтернативне відео -->
+      <source src="#" type="video/webm" />
+      <source src="#" type="vedeo/mp4" />
+    </video>
+    <!-- Test table -->
+    <caption>
+      Заробіток відомих засновників
+    </caption>
+    <table>
+      <thead>
+        <tr>
+          <th>No.</th>
+          <th>Full name</th>
+          <th>Position</th>
+          <th>Salary</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>Bill Gates</td>
+          <td>Founder Microsoft</td>
+          <td rowspan="2">$1000</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Steve Jobs</td>
+          <td>Founder Apple</td>
+          <!-- <td>$1200</td> -->
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Larry Page</td>
+          <td>Founder Google</td>
+          <td>$1100</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>Mark Zuckerberg</td>
+          <td>Founder Facebook</td>
+          <td>$1300</td>
+        </tr>
+      </tbody>
+      <!-- <tfoot></tfoot> -->
+    </table>
+  </body>
+</html>
